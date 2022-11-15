@@ -59,8 +59,8 @@ async function getRecipes() {
     return Recipes;
   }
   let recipez = [];
-  return new Promise((resolveOuter) => {
-    resolveOuter(
+  return new Promise((resolving) => {
+    resolving(
       new Promise((resolve, reject) => {
   RECIPE_URLS.forEach(async function(element){
   try{
